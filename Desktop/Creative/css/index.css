@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 18px; 
+  line-height: 1.75em; 
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300; 
+}
+
+/* Changes the color of the icon bar */ 
+.navbar-toggle .icon-bar{
+	background-color: #304B88; 
+}
+
+.navbar-toggle{
+	float: left; 
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      font-size: 18px; 
+
+}
+
+/* Modifies color of mobile navigation text*/ 
+.text-color a{
+	color: #304B88; 
+}
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+.bgimg-1 {
+  background-image: url("../images/img1.jpg");
+  min-height: 90%;
+}
+
+.bgimg-2 {
+  background-image: url("../images/img2.jpg");
+  min-height: 90%;
+}
+
+.bgimg-3 {
+  background-image: url("../images/img3.jpg");
+  min-height: 90%;
+}
+
+.bgimg-4 {
+  background-image: url("../images/img7.jpg");
+  min-height: 90%;
+}
+
+.bgimg-5 {
+  background-image: url("../images/img4.jpg");
+  min-height: 90%;
+}
+
+.bgimg-6 {
+  background-image: url("../images/img5.png");
+  min-height: 90%;
+}
+
+.bgimg-7 {
+  background-image: url("../images/img6.jpg");
+  min-height: 90%;
+}
+
+.bgimg-8 {
+  background-image: url("../images/img7.jpg");
+  min-height: 90%;
+}
+
+/* Positioning and centering for text overlay on main image */ 
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-weight: 400; 
+}
+
+
+.border {
+  background-color: transparent;
+  color: #fff;
+  padding: 18px;
+  font-size: 45px;
+  text-shadow: 2px 2px 4px #333;
+  
+}
+
+.ff{
+  color: #fff;
+  padding: 18px;
+  font-family: 'Frijole', cursive;
+  font-size: 60px; 
+}
+
+.parastyle{
+	color: #777;
+	background-color:white;
+	text-align:center;
+	padding:50px 80px;
+	text-align: left;
+	}
+
+.headlbl{
+	text-align:center;
+}
+
+
+/* Default set color purple */
+.blue{
+  color: #304B88;  
+}
+
+.orange{
+  color: #FF9E4D; 
+}
+
+.gray{
+  color: #777; 
+}
+
+.big-orange{
+  color: #FF9E4D; 
+  font-size: 1.75em; 
+}
+
+
+
+/* Sets margin to 0 on head lbl */
+#mrgntop{
+  margin-top: 0; 
+}
+
+.slimtxt{
+  font-weight: 200; 
+}
+
+.mediumtxt{
+  font-weight: 700; 
+}
+
+.row{
+  margin: 0; 
+}
+
+/* Background color and text properties for consult link*/
+#appt{
+  background-color: #304B88; 
+  color: white; 
+  font-weight: 400;
+  width: 100%; 
+  margin-top: 3em; 
+  padding: .5em 0px; 
+  white-space: nowrap;
+  border-radius: 25px; 
+}
+
+/* Background color and text properties for consult link*/
+.apptlink{
+  width: 50%; 
+}
+
+/* Background color and text properties for consult link*/
+.apptlink2{
+  width: 200px; 
+  margin: 0 auto; 
+}
+
+/* Removes underline from links */
+a:link {
+  text-decoration: none;
+}
+
+/* Adds padding to text on about page */
+.about-txt{
+  padding: 1em 7em; 
+}
+
+.wellpad{
+  padding-left: 0px;  
+  color: #fff; 
+}
+
+.well{
+  background-color: #304B88; 
+}
+
+/* Container and style for responsive video frame */
+#video{ 
+  width:100%;
+  position:relative;
+  padding-bottom:45.25%;
+  padding-top:60px;
+  height:auto;
+  overflow:hidden;
+}
+
+/* Postions video within container */
+.video {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;    
+}
+
+.ctnr{
+  margin: 2em 2em; 
+}
+
+.margin-lbl {
+  margin-bottom: 2em; 
+}
+
+/* Replaces rounded borders with squared on the services page and takes out image padding*/
+.thumbnail{
+  border-radius: 0px; 
+  padding: 0px; 
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+ 
+  background-attachment: scroll;
+
+}
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 767px) {
+    
+
+    /* Changes background color and aligns text on mobile nav  */ 
+.navbar-collapse li a{
+	text-align: center; 
+	color: #304B88; 
+	font-size: 18px; 
+	margin-top: 1px; 
+	padding: 1em 0;  
+}
+
+.navbar-collapse li a:hover{
+	opacity: .90; 
+}
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+ 
+  background-attachment: scroll;
+
+}
+
+
+}
+
+@media only screen and (max-width: 420px) {
+
+/* Reduces container margins for text on mobile devices */
+.row{
+  padding: 2em 1em; 
+}
+
+/* Reduces text size over background images */
+.border{
+  font-size: 30px; 
+}
+
+/* Controls the margin for the title of each section */
+.hdlbl{
+  text-align: center; 
+  margin-bottom: 1.5em; 
+}
+
+/*Centers links with purple background and widens the width*/
+.apptlink{
+  margin: 0 auto; 
+  width: 75%; 
+}
+
+/* Background color and text properties for consult link*/
+#appt{
+  font-size: 90%; 
+
+}
+
+/* Reduces padding for text on about page for mobile devices*/
+.about-txt{
+  padding: 1em 1.5em; 
+}
+
+.tc{
+  text-align: center;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8{
+  min-height: 50%; 
+
+}
+
+.margin-lbl {
+  margin-bottom: 1em; 
+}
+
+.mg{
+  margin-top: 1.5em; 
+}
+
+.ctnr{
+  margin: 0em 0em; 
+}
+
+.copy-right{
+  font-size: 70%; 
+}
+
+
+  }
