@@ -1,0 +1,39 @@
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span class="hamburger" onclick="openNav()">☰</span>
+
+
+<div class="primary-image-container green-bkg">
+  <%if(!isLoggedIn) { %>
+  <a href="/login"><h3 class="login">Log In</h3></a>
+  <% } else { %>
+    <a href="/logout"><h3 class="logout">Log Out</h3></a>
+  <% } %>
+  <div class="text-container">
+  <h1 class="headline">Infuse your life with action.</h1>
+  <h3 class="subline white">Create your future<span class="white-dot">.</span></h3>
+  </div>
+
+<img class="image1" src="images/hexane.png">
+
+</div>
+
+
+
+
+
+<%if(isLoggedIn) { %>
+<h2><%= currentUser.local%></h2>
+<h2><%= currentUser.local.firstname %></h2>
+<!-- <p><%=  %></p> -->
+<% } else { %>
+<div class="text-center col-md-8 col-md-offset-2">
+    <h1><span class="fa fa-lock"></span>Welcome </h1>
+    <a href="/login" class="btn btn-default">Login</a>
+    <a href="/signup" class="btn btn-default">Signup</a>
+</div>
+
+<% } %>
+<%if(isLoggedIn) { %>
+<h3><a href="/profile">Profile</a></h3>
+<% } %>
