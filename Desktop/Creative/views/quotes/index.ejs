@@ -1,0 +1,37 @@
+<h1>All Quotes</h1>
+
+<% quotes.forEach((quote) => { %>
+  <article class="">
+    <p><%= quote %></p>
+  </article>
+  <div class="quotes">
+    <p><strong>Name:</strong> <%= quote.fullName %></p>
+    <p><strong>Contact Number:</strong> <%= quote.phoneNumber %></p>
+    <p><strong>Email:</strong> <%= quote.email %></p>
+    <p><strong>Project Type:</strong> <%= quote.projectType %></p>
+    <p><strong>Details:</strong> <%= quote.details %></p>
+    <form class="delete-btn" action="/quotes/<%= quote.id%>?_method=DELETE" method="POST">
+       <button type="submit" class="btn btn-danger">Delete Quote</button>
+     </form>
+  </div>
+<% }) %>
+
+<%if(isLoggedIn) { %>
+<div type="button" class="btn btn-default">
+  <a href="/profile">Profile</a>
+</div>
+<% } %>
+
+<div type="button" class="btn btn-default">
+  <a href="/">Home</a>
+</div>
+
+<style media="screen">
+  .quotes {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+  }
+</style>
